@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>XHR</title>
+  </head>
+  <style>
+    .container {
+      opacity: 0;
+      transition: opacity 1s;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    .country {
+      border: 3px solid skyblue;
+      padding: 5px;
+    }
+  </style>
+
+  <body>
+    <div class="container"></div>
+
+    <footer style="text-align: center">
+      <h1>
+        XHR Request To:
+        <span style="color: slateblue"
+          >https://restcountries.eu/rest/v2/name/{name}</span
+        >
+      </h1>
+    </footer>
+  </body>
+  <script src="index.js"></script>
+</html>
