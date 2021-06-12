@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tom-select@1.7.5/dist/css/tom-select.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/tom-select@1.7.5/dist/js/tom-select.complete.min.js"></script>
+
     <title>XHR</title>
   </head>
   <style>
@@ -18,19 +24,53 @@
       border: 3px solid skyblue;
       padding: 5px;
     }
+    .dropdown {
+      padding: 10px;
+      width: 50%;
+      margin: auto;
+    }
+
+    button {
+      margin: auto;
+      padding: 10px;
+      background: deeppink;
+      border: none;
+      border-radius: 5px;
+      color: floralwhite;
+      font-weight: bolder;
+      font-size: x-large;
+    }
   </style>
 
   <body>
+    <header>
+      <h1 style="text-align: center; color: indianred">
+        Type one or multiple country name to get some information about it !
+        (select from dropdown)
+      </h1>
+    </header>
+    <div class="dropdown_section">
+      <select id="select-junk" placeholder="Start Typing..."></select>
+    </div>
+
+    <br />
+    <div style="text-align: center; margin: 10px">
+      <button class="get-btn">Get Info</button>
+    </div>
+
     <div class="container"></div>
 
-    <footer style="text-align: center">
+    <footer style="text-align: center; color: indigo">
       <h1>
         XHR Request To:
         <span style="color: slateblue"
-          >https://restcountries.eu/rest/v2/name/{name}</span
+          ><a href="https://restcountries.eu/" target="_blank"
+            >https://restcountries.eu</a
+          ></span
         >
       </h1>
     </footer>
   </body>
+
   <script src="index.js"></script>
 </html>
